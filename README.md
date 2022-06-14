@@ -48,8 +48,8 @@
 import { Dash_Tweaker } from "dcldash"
 
 const testEntity = new Entity("testBox")
-testEntity(new BoxShape())
-testEntity(new Transform({
+testEntity.addComponent(new BoxShape())
+testEntity.addComponent(new Transform({
   position: new Vector3(8, 2, 8),
 }))
   
